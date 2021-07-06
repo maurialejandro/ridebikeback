@@ -40,4 +40,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function create($request){
+        return "Crear usuario";
+    }
+
+    public function updateUser($request){
+        return "Actualizar usuario";
+    }
+
+    public function deleteUser($request){
+        return "Eliminar usuario";
+    }
 }
