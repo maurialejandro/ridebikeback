@@ -23,5 +23,7 @@ Route::get('/', function () {
 
 Route::get('hello-word', [testController::class, 'test']);
 
-Route::post('create-user', [UserController::class, 'create']);
+// Create user 
+Route::get('create-user', [UserController::class, 'create']);
+
 
