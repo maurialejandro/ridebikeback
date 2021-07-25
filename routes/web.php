@@ -6,6 +6,10 @@ use App\Http\Controllers\testController;
 
 use App\Http\Controllers\UserController;
 
+use App\Http\Controllers\DiciplineController;
+
+use App\Http\Controllers\SpotController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,5 +29,9 @@ Route::get('hello-word', [testController::class, 'test']);
 
 // Create user 
 Route::get('create-user', [UserController::class, 'create']);
+
+Route::get('list-diciplines', [DiciplineController::class, 'get']);
+
+Route::get('list-spots', [SpotController::class, 'get']);
 
 
